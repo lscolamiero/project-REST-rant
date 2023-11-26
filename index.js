@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
 
 //Creating second route
 app.get('*', function (req, res){
-    res.status(404).send('<h1>404 Page</h1>')
+    res.render('error404')
 })
 
 //This is just to make sure the server is running
