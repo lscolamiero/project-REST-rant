@@ -1,4 +1,4 @@
-//requirung dotenv
+//requiring dotenv
 require('dotenv').config()
 
 //requiring express
@@ -7,12 +7,15 @@ const express = require('express')
 //Initializing app variable
 const app = express()
 
+app.set('view engine', 'jsx')
+app.engine('jsx', require('express-react-views').createEngine())
+
 //Importing router for places
 app.use('/places', require('./controllers/places'))
 
 //Creating first route
 app.get('/', function (req, res) {
-    res.send('Hello World!')
+    res.render('home')
 })
 
 //Creating second route
