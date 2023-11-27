@@ -18,6 +18,9 @@ function index (data) {
           <br />
           Photo by <a href="https://unsplash.com/@sevcovic23?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Petr Sevcovic</a> on <a href="https://unsplash.com/photos/people-inside-cafe-qE1jxYXiwOA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
           </div>
+          <a href="/">
+              <button className="btn-primary">HOME</button>
+          </a>
         </div>
       )
     })
