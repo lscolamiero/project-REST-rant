@@ -1,19 +1,13 @@
-//requiring dotenv
+//Modules and Globals
 require('dotenv').config()
-
-//requiring express
 const express = require('express')
-
-//Initializing app variable
 const app = express()
 
+//Express Settings
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
-
-//Importing router for places
+app.use(express.static('public'))
 app.use('/places', require('./controllers/places'))
-
-//Creating first route
 app.get('/', function (req, res) {
     res.render('home')
 })
