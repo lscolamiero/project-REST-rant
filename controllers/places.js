@@ -1,8 +1,13 @@
 //Creating controller
 const router = require('express').Router()
 
-//Creating first route in places
+
 //GET /places
+router.get('/new', (req, res) => {
+  res.render('places/new')
+})
+
+
 router.get('/', function (req, res){
     let places = [{
         name: 'H-Thai-ML',
