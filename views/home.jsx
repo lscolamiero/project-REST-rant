@@ -1,7 +1,7 @@
 const React = require('react')
 const Def = require('./default')
 
-function home () {
+function home() {
     return (
         <Def>
             <main>
@@ -9,7 +9,7 @@ function home () {
                 <div className="text-center">
                     <img src="/images/food-bowl.jpg" alt="Protein bowl" height={700} width={700} />
                     <div>
-                    Photo by <a href="https://unsplash.com/@pwign?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Anh Nguyen</a> on <a href="https://unsplash.com/photos/vegetable-and-meat-on-bowl-kcA-c3f_3FE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                        Photo by <a href="https://unsplash.com/@pwign?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Anh Nguyen</a> on <a href="https://unsplash.com/photos/vegetable-and-meat-on-bowl-kcA-c3f_3FE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
                     </div>
                     <br />
                     <a href="/places">

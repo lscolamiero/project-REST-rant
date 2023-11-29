@@ -1,7 +1,7 @@
 const React = require('react')
 const Def = require('../default')
 
-function new_form () {
+function new_form() {
     return (
         <Def>
             <main>
@@ -9,23 +9,23 @@ function new_form () {
                 <form action="/places" method="POST">
                     <div className="from-group">
                         <label htmlFor="name">Place Name</label>
-                        <input className="form-control" id="name" type="text" name="name" required />
+                        <input className="form-control" id="name" name="name" required />
                     </div>
                     <div className="from-group">
-                        <label htmlFor="pic">Place Pictures</label>
-                        <input className="form-control" id="pic" type="url" name="pic" />
+                        <label htmlFor="pic">Place Picture</label>
+                        <input className="form-control" type="url" id="pic" name="pic" />
                     </div>
                     <div className="from-group">
                         <label htmlFor="city">City</label>
-                        <input className="form-control" id="city" type="text" name="city" />
+                        <input className="form-control" id="city" name="city" />
                     </div>
                     <div className="from-group">
                         <label htmlFor="state">State</label>
-                        <input className="form-control" id="state" type="text" name="state" />
+                        <input className="form-control" id="state" name="state" />
                     </div>
                     <div className="from-group">
                         <label htmlFor="cuisines">Cuisines</label>
-                        <input className="form-control" id="cuisines" type="text" name="cuisines" required />
+                        <input className="form-control" id="cuisines" name="cuisines" required />
                     </div>
                     <br />
                     <input className="btn btn-primary" type="submit" value="Add Place" />

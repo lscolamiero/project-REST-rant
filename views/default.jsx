@@ -1,6 +1,6 @@
 const React = require('react')
 
-function Def (html) {
+function Def(html) {
     return (
         <html>
             <head>
@@ -13,6 +13,6 @@ function Def (html) {
             </body>
         </html>
     )
-  }  
+}
 
 module.exports = Def
