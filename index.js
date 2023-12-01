@@ -8,10 +8,9 @@ const app = express()
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
-app.use('/places', require('./controllers/places'))
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
-
+app.use('/places', require('./controllers/places'))
 //ROUTES
 app.get('/', function (req, res) {
     res.render('home')
