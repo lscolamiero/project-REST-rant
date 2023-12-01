@@ -1,7 +1,13 @@
 h1 {
-    text-align: center;
-    color: cornflowerblue;
-  }
+  text-align: center;
+  color: cornflowerblue;
+}
+
+h2 {
+  text-align: center;
+  color: skyblue;
+  font-size: 5em;
+}
 
 nav {
   background-color: cornflowerblue;
@@ -28,4 +34,31 @@ nav a {
 nav a:hover {
   color: pink;
   text-decoration: none;
+}
+
+.showplaces {
+  display: flex;
+  flex-direction: row;
+}
+
+.aligner {
+  text-align: center;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.aligner2 {
+  text-align: center;
+  margin-left: 75px;
+  margin-top: 25px;
+}
+
+.aligner2 h1 {
+  font-size: 8em;
+}
+
+.comments {
+  margin-top: 50px;
+  font-size: 6em;
+  color: skyblue;
 }
