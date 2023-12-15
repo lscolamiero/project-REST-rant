@@ -43,13 +43,15 @@ router.post('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
   db.Place.findById(req.params.id)
-    .then(place => {
+  .populate('comments')
+  .then(place => {
+      console.log(place.comments)
       res.render('places/show', { place })
-    })
-    .catch(err => {
+  })
+  .catch(err => {
       console.log('err', err)
       res.render('error404')
-    })
+  })
 })
 
 router.delete('/:id', (req, res) => {
