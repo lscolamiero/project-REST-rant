@@ -8,13 +8,15 @@ function show(data) {
                 <div className='showplaces'>
                     <div className='aligner'>
                         <img className="img-fluid rounded" src={data.place.pic} alt={data.place.name} height={800} width={800} />
+                        <h4>Located in {data.place.city}, {data.place.state}</h4>
                     </div>
                     <div className='aligner2'>
                         <h1>{data.place.name}</h1>
                         <h2>Rating</h2>
                         <h4>Not Rated</h4>
                         <h2>Description</h2>
-                        <h4>Located in {data.place.city}, {data.place.state} and serving {data.place.cuisines}.</h4>
+                        <h3>{data.place.showEstablished()}</h3>
+                        <h4>Serving {data.place.cuisines}</h4>
                     </div>
                 </div>
                 <div>
