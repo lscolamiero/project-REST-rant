@@ -1,5 +1,6 @@
 //Modules and Globals
 require('dotenv').config()
+const PORT = process.env.PORT
 const express = require('express')
 const methodOverride = require('method-override')
 const app = express()
@@ -24,4 +25,8 @@ app.get('*', function (req, res) {
 console.log('I am awake')
 
 //Setting the server to listen on the port set on my .env file
-app.listen(process.env.PORT)
+app.listen(PORT, () => {
+    console.log(`Listening on port: ${PORT}`)
+})
+
+module.exports = app;
